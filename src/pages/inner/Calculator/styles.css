@@ -1,0 +1,52 @@
+#calculator {
+  height: 350px;
+  width: 300px;
+  background-color: black;
+  border: 2px solid #47476b;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 12px; */
+
+}
+
+#buttons { 
+  flex-grow: 1;
+  display: grid;
+  grid-template-areas: "clear clear divide multiply"
+                       "seven eight nine subtract"
+                       "four five six add"
+                       "one two free equals"
+                       "zero zero decemical equals";
+  grid-gap: 1px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  word-break: break-word;
+} 
+
+#clear {
+  grid-area: clear;
+  background-color: rgb(255, 108, 108);
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#add {
+  grid-area: add;
+}
+
+#equals {
+  grid-area: equals;
+  background-color: rgb(119, 119, 255);
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#divide, #multiply, #subtract, #add {
+  background-color: gray;
+}
+

@@ -1,0 +1,12 @@
+
+#enteredValue {
+  text-align: right;
+  color: orange;
+}
+
+#display {
+  color: orange;
+  margin-top: 2px;
+  text-align: right;
+  font-size: 24px;
+}
